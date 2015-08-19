@@ -1,5 +1,23 @@
-call pathogen#infect()
+"call pathogen#infect()
+"filetype off
+
+set nocompatible
 filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'marijnh/tern_for_vim'
+Plugin 'bling/vim-airline'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fugitive'
+
+call vundle#end()
 
 set encoding=utf-8
 set nocompatible
