@@ -92,7 +92,7 @@ POWERLEVEL9K_DIR_FOREGROUND='232'
 
 POWERLEVEL9K_VCS_BACKGROUND='036'
 
-export NVM_DIR="/Users/rossdavidson/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
