@@ -1,6 +1,3 @@
-"call pathogen#infect()
-"filetype off
-
 set nocompatible
 filetype off
 
@@ -18,6 +15,9 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
+
+"call pathogen#infect()
+"filetype off
 
 set encoding=utf-8
 set nocompatible
