@@ -83,6 +83,7 @@ export PATH="$HOME/bin:/opt/wine-staging/bin:$HOME/Programming/mxe/usr/bin:$HOME
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias hs="homeshick"
 
 POWERLEVEL9K_CONTEXT_BACKGROUND='126'
 POWERLEVEL9K_CONTEXT_FOREGROUND='232'

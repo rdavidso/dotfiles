@@ -13,6 +13,8 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'bling/vim-airline'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fugitive'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
@@ -21,19 +23,24 @@ call vundle#end()
 
 set encoding=utf-8
 set nocompatible
+set backspace=indent,eol,start
 syntax enable
 set number
 set smartindent
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
-" set expandtab
+set expandtab
 
 set mouse=a
 
-nnoremap <C-p> :bp<cr>
-nnoremap <C-n> :bn<cr>
-nnoremap <C-c> :bp\|bd #<CR>
+"nnoremap <C-p> :bp<cr>
+"nnoremap <C-n> :bn<cr>
+"nnoremap <C-c> :bp\|bd #<CR>
+
+map <C-p> :bp<cr>
+map <C-n> :bn<cr>
+map <C-c> :bp\|bd #<CR>
 
 " airline
 " =========
@@ -44,3 +51,5 @@ let g:airline_powerline_fonts = 1
 
 let g:tern_show_argument_hints_ = 'on_move'
 let g:tern_show_signature_in_pum = 1
+
+let g:jsx_ext_required = 0
