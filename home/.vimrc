@@ -7,7 +7,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'bling/vim-airline'
@@ -26,6 +26,7 @@ set nocompatible
 set backspace=indent,eol,start
 syntax enable
 set number
+set cursorline
 set smartindent
 filetype plugin indent on
 set tabstop=4
@@ -41,6 +42,7 @@ set mouse=a
 map <C-p> :bp<cr>
 map <C-n> :bn<cr>
 map <C-c> :bp\|bd #<CR>
+map <C-b> :TagbarToggle<cr>
 
 " airline
 " =========
