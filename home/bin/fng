@@ -4,10 +4,10 @@ if [ -n "$1" ] && [ -n "$2" ] && [ -n "$3" ]
 then
     if [ -n "$4" ]
     then
-        file=`find "$1" -type f -name "$2" -exec grep -Hn --color=always "$3" {} \; | sed -e 's/\(.*\):\([0-9]*\):[ \t]*\(.*\)/+\2 \1/' | sed "$4q;d"`
+        file=`find "$1" -type f -name "$2" -exec grep -Hn "$3" {} \; | sed -e 's/\(.*\):\([0-9]*\):[ \t]*\(.*\)/+\2 \1/' | sed "$4q;d"`
         vim $file
     else
-        find "$1" -type f -name "$2" -exec grep -Hn --color=always "$3" {} \; | sed -e 's/\(.*\):\([0-9]*\):[ \t]*\(.*\)/\1\t\2\t\3/' | column -t -c 3 -s "	" | nl
+        find "$1" -type f -name "$2" -exec grep -Hn "$3" {} \; | sed -e 's/\(.*\):\([0-9]*\):[ \t]*\(.*\)/\1\t\2\t\3/' | column -t -c 3 -s "	" | nl | grep --color=always "$3"
     fi
 else
     printf "usage:	fng search_directory files_to_match grep_match [matched_line]\n"
