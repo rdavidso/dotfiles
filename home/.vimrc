@@ -27,6 +27,7 @@ set backspace=indent,eol,start
 syntax enable
 set number
 set cursorline
+set autoindent
 set smartindent
 filetype plugin indent on
 set tabstop=4
