@@ -15,11 +15,17 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'tpope/vim-markdown'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()
 
 "call pathogen#infect()
 "filetype off
+
+" EditorConfig
+" ============
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 set encoding=utf-8
 set nocompatible
@@ -35,6 +41,9 @@ set shiftwidth=4
 set expandtab
 
 set mouse=a
+if &term =~ '^screen'
+    set ttymouse=xterm2
+endif
 
 "nnoremap <C-p> :bp<cr>
 "nnoremap <C-n> :bn<cr>
