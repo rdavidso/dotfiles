@@ -15,6 +15,7 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'peterhoeg/vim-qml'
 Plugin 'tpope/vim-markdown'
 Plugin 'editorconfig/editorconfig-vim'
 
