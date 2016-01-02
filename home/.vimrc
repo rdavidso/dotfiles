@@ -37,9 +37,14 @@ set cursorline
 set autoindent
 set smartindent
 filetype plugin indent on
-set tabstop=4
-set shiftwidth=4
+
+" Shouldn't be needed anymore due to .editorconfig
+"set tabstop=4
+"set shiftwidth=4
 set noexpandtab
+
+set list
+set listchars=eol:‹,tab:›\ ,trail:·,extends:»,precedes:«,nbsp:¬
 
 set mouse=a
 if &term =~ '^screen'
