@@ -24,6 +24,13 @@ call vundle#end()
 "call pathogen#infect()
 "filetype off
 
+" Reload .vimrc after edit
+" ========================
+augroup myvimrc
+	au!
+	au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+augroup END
+
 " EditorConfig
 " ============
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
@@ -71,3 +78,8 @@ let g:tern_show_argument_hints_ = 'on_move'
 let g:tern_show_signature_in_pum = 1
 
 let g:jsx_ext_required = 0
+
+" YouCompleteMe
+" =============
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1

@@ -55,7 +55,7 @@ plugins=(git gitfast)
 
 # User configuration
 
-export PATH="$HOME/bin:/opt/wine-staging/bin:$HOME/Programming/mxe/usr/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="$HOME/Programming/go/bin:$HOME/bin:/opt/wine-staging/bin:$HOME/Programming/mxe/usr/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/openresty/nginx/sbin:/usr/local/go/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 
@@ -100,3 +100,5 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
+
+export GOPATH=$HOME/Programming/go
