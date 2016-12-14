@@ -84,6 +84,7 @@ export PATH="$HOME/bin:/opt/wine-staging/bin:$HOME/Programming/mxe/usr/bin:$HOME
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias hs="homeshick"
+alias dict="sdcv"
 
 POWERLEVEL9K_CONTEXT_BACKGROUND='126'
 POWERLEVEL9K_CONTEXT_FOREGROUND='232'
@@ -100,3 +101,5 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
+
+[[ -s "/home/weblair/.gvm/scripts/gvm" ]] && source "/home/weblair/.gvm/scripts/gvm"
