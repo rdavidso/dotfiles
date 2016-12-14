@@ -120,3 +120,6 @@ export PS1="\033[01;36m\u\033[00m@\033[01;31m\h\033[00m:\033[01;33m\w > \033[00m
 export DOOMWADDIR=$HOME/.wads
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+export NVM_DIR="/home/draggor/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

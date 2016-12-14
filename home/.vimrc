@@ -18,6 +18,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'peterhoeg/vim-qml'
 Plugin 'tpope/vim-markdown'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'elzr/vim-json'
 
 call vundle#end()
 
