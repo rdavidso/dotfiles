@@ -84,6 +84,7 @@ export PATH="$HOME/Programming/go/bin:$HOME/bin:/opt/wine-staging/bin:$HOME/Prog
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias hs="homeshick"
+alias dict="sdcv"
 
 POWERLEVEL9K_CONTEXT_BACKGROUND='126'
 POWERLEVEL9K_CONTEXT_FOREGROUND='232'
@@ -103,4 +104,5 @@ fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 export GOPATH=$HOME/Programming/go
