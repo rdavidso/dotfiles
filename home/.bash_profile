@@ -7,3 +7,4 @@ export NVM_DIR="$HOME/.nvm"
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+if [ -e /Users/rdavidson/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/rdavidson/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
