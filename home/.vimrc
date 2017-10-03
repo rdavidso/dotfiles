@@ -19,6 +19,7 @@ Plugin 'peterhoeg/vim-qml'
 Plugin 'tpope/vim-markdown'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'elzr/vim-json'
+Plugin 'flowtype/vim-flow'
 
 call vundle#end()
 
@@ -84,3 +85,8 @@ let g:jsx_ext_required = 0
 " =============
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
+
+" vim-flow
+" ========
+let g:flow#autoclose = 1
+let g:flow#errjmp = 1
